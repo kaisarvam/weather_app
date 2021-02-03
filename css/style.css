@@ -1,0 +1,35 @@
+.body-night{
+    background: #9b9b98 !important;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+  }
+
+  .body-day{
+    background: #e9e7e7;
+    letter-spacing: 0.2em;
+    font-size: 0.8em;
+  }
+  .container{
+    max-width: 400px;
+  }
+  .icon{
+    position: relative;
+    top: -50px;
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: -50px;
+  }
+
+  .hot{
+
+    box-shadow:  0 0 100px #ee1212, 0 0 5px #050505;
+  }
+
+  .cool{
+
+    box-shadow:  0 0 100px #12b0cc, 0 0 5px #050505;
+  }
+ 
+  h1{
+      color: rgb(73, 162, 246);
+  }
