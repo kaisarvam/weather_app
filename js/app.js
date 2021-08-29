@@ -8,8 +8,6 @@ const box = document.querySelector('.container');
 const body =document.querySelector('body');
 const forecast = new Forecast();
 
-
-
 //-----------update html UI-------------
 const updateUI = (data) => {
   // destructure properties
@@ -17,9 +15,9 @@ const updateUI = (data) => {
 
   // update details template
   details.innerHTML = `
-    <h5 class="my-3">${cityDets.EnglishName}</h5>
+    <h5 class="my-2">${cityDets.EnglishName}</h5>
     <div class="my-3">${weather.WeatherText}</div>
-    <div class="display-4 my-4">
+    <div class="display-4 my-3">
       <span>${weather.Temperature.Metric.Value}</span>
       <span>&deg;C</span>
     </div>

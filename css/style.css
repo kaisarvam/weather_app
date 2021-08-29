@@ -1,17 +1,27 @@
+
 .body-night{
-    background: #9b9b98 !important;
+  background-image: url('./../img/body-bg/night-body3.gif');
+  background-repeat: no-repeat;
+  background-size: 100vw;
     letter-spacing: 0.2em;
     font-size: 0.8em;
   }
+  .weather-text{
+    color: coral;
+  }
 
   .body-day{
-    background: #e9e7e7;
+    background-image: url('./../img/body-bg/day-body.gif');
+    background-repeat: no-repeat;
+    background-size: 100vw;
     letter-spacing: 0.2em;
     font-size: 0.8em;
   }
   .container{
     max-width: 400px;
+    margin-top: 5px !important;
   }
+  
   .icon{
     position: relative;
     top: -50px;
@@ -22,14 +32,24 @@
 
   .hot{
 
-    box-shadow:  0 0 100px #ee1212, 0 0 5px #050505;
+    box-shadow:  0 0 100px #f81c1c, 0 0 5px #050505;
   }
 
   .cool{
 
     box-shadow:  0 0 100px #12b0cc, 0 0 5px #050505;
   }
+  .change-location{
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
  
   h1{
-      color: rgb(73, 162, 246);
+      color: rgb(255, 255, 255);
+      padding: 0;
+  }
+  footer{
+    color: black;
+    font-size: 16px;
+    background-color: rgba(255, 0, 0, 0.37);
   }
