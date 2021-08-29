@@ -1,14 +1,18 @@
+const loader = document.getElementById('preloader');
+
 class Forecast{
 
 constructor(){
-    this.Key = 'hd9BxTC29xd2Km0TpfV2sQZo2LocouCi';
+    this.Key = 'rVgCBYmLKHlt0GCmkSxfptVoF7TwTuTw';
     this.weatherURL = 'https://dataservice.accuweather.com/currentconditions/v1/';
     this.cityURL = 'https://dataservice.accuweather.com/locations/v1/cities/search';
    
 }
 async updateCity(city){
+    loader.classList.remove("d-none");
     const cityDets = await this.getCity(city);
     const weather = await this.getWeather(cityDets.Key);
+    loader.classList.add("d-none");
     return {cityDets,weather};
 }
 
